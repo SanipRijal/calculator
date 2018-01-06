@@ -14,4 +14,7 @@ def mul(a, b):
 
 #returns division of two numbers
 def div(a, b):
-	return (a / b) 
+	try:
+		return (a / b)
+	except ZeroDivisionError as err:
+		print("Error ", err) 
